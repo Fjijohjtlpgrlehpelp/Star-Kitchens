@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <div id="content">
+    <div class="desktop">
+        <!--
+            some content and markups here. by default this is loaded in desktop
+        -->
+    </div>
+
+    <div class="mobile_device_380px">
+        <!-- content and some markups for mobile -->
+    </div>
+
+    <div class="mobile_device_480px">
+        <!-- content and some markups for mobile -->
+    </div>
+</div>
+<meta name="google-site-verification" content="2yZIEjBFzzqD9MffuCektDVFlozx4DcGcgHLUJX6s5s" />
+      <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+ <link rel="stylesheet" href="style.css"/link>
+ <link rel="sheet" href="index.html"/link>
+  <link rel="sheet" href="googlec615379bb8ef01 ee.html"/link>
+</head>
+<body onload="openCity(event, 'home')">
+  <div class="tab">
+  </div>
+<body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <title>Star Kitchens</title>
+    <style>
+body {
+           background-color: #C89537;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-size: cover;
+            color: white;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        
+        /* Basic styling for header */
+        header {
+           background-image: url('https://t3.ftcdn.net/jpg/02/52/38/80/360_F_252388016_KjPnB9vglSCuUJAumCDNbmMzGdzPAucK.jpg');
+           color: white;
+            padding: 40px;
+           /*background-color: #E11E52;*/
+        }
+        
+        h1 {
+            font-size: 3em;
+        }
+
+        /* Tab navigation styling */
+         /* Style the tab */
+.tab {
+  overflow: hidden;
+  background-color: #376ac8;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #C89537;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #C89537;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #F37709;
+  border-top: none;
+}
+        /* Styling for sections */
+        section {
+            display: none;
+            padding: 20px;
+           /*background-color: #F37709;*/
+            margin-top: 20px;
+        }
+
+        section.active {
+            display: block;
+
+        footer {
+            background-color: #376ac8;
+            padding: 20px;
+            color: white;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+ <header>
+        <h1>Spaghetti Recipe</h1>
+        <p>How to make spaghetti?</p>
+    </header>
+    <div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'home')">Home</button>
+  <button class="tablinks" onclick="openCity(event, 'facts')">Nutrition Facts</button>
+</div>
+<nav class="tab-bar">
+<div id="home" class="tabcontent">
+<strong>Spaghetti Recipe</strong>
+<div class="card img-fluid" style="width:500px">
+   <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Spaghetti_al_Pomodoro.JPG" alt="Card"> </header> </body> </html>
+      <h4 class="card-title">Spaghetti</h4>
+     <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#demo">Recipe</button>
+  <div id="demo" class="collapse show">
+    <p>Ingredients</p>
+    <p>Recipe</p>
+  </div>
+</div>
+</div>
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+ </body>
+</html>
