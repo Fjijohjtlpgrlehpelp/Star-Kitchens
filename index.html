@@ -9,7 +9,7 @@
     </div>
 
     <div class="mobile_device_380px">
-        <!-- content and some markups for mobile -->
+        <!-- content and some markups for mobile --h>
     </div>
 
     <div class="mobile_device_480px">
@@ -17,13 +17,18 @@
     </div>
 </div>
 <meta name="google-site-verification" content="2yZIEjBFzzqD9MffuCektDVFlozx4DcGcgHLUJX6s5s" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta charset="utf-8">
+      <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Star Kitchens - Amazing food and recipes prepared just for your kitchen.">
+    <meta name="keywords" content="recipes, cooking, food, kitchen, Star Kitchens">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Star Kitchens</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">            
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
- <link rel="stylesheet" href="style.css"/link>
- <link rel="sheet" href="index.html"/link>
-  <link rel="sheet" href="googlec615379bb8ef01 ee.html"/link>
 </head>
 <body onload="openCity(event, 'Home')">
   <div class="tab">
@@ -31,94 +36,191 @@
 <body></body>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=2.0">
-    <title>Star Kitchens</title>
     <style>
 body {
-           background-color: #C89537;
-            font-family: 'Comic Sans MS', cursive, sans-serif;
-            background-size: cover;
-            color: white;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-        
-        /* Basic styling for header */
-        header {
-           background-image: url('https://t3.ftcdn.net/jpg/02/52/38/80/360_F_252388016_KjPnB9vglSCuUJAumCDNbmMzGdzPAucK.jpg');
-           color: white;
-            padding: 40px;
-           /*background-color: #E11E52;*/
-        }
-        
-        h1 {
-            font-size: 3em;
-        }
+    background-color: #C89537;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-size: cover;
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
 
-        /* Tab navigation styling */
-         /* Style the tab */
+header {
+    background-image: url('https://t3.ftcdn.net/jpg/02/52/38/80/360_F_252388016_KjPnB9vglSCuUJAumCDNbmMzGdzPAucK.jpg');
+    color: white;
+    padding: 40px;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+/* Tab navigation styling */
 .tab {
-  overflow: hidden;
-  background-color: #376ac8;
+    overflow: hidden;
+    background-color: #376ac8;
 }
 
-/* Style the buttons inside the tab */
 .tab button {
-  background-color: inherit;
-  color: white;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
-  font-size: 17px;
+    background-color: inherit;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
 }
-/* Change background color of buttons on hover */
+
 .tab button:hover {
-  background-color: #C89537;
+    background-color: #C89537;
 }
 
-/* Create an active/current tablink class */
 .tab button.active {
-  background-color: #C89537;
+    background-color: #C89537;
 }
 
-/* Style the tab content */
 .tabcontent {
-  display: none;
-  padding: 6px 12px;
-  border: 1px solid #F37709;
-  border-top: none;
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #F37709;
+    border-top: none;
 }
-        /* Styling for sections */
-        section {
-            display: none;
-            padding: 20px;
-           /*background-color: #F37709;*/
-            margin-top: 20px;
-        }
 
-        section.active {
-            display: block;
+.input-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
 
-        footer {
-            background-color: #376ac8;
-            padding: 20px;
-            color: white;
-            margin-top: 30px;
-        }
+.input-box input[type="text"] {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.input-box button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    background-color: #376ac8;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.input-box button:hover {
+    background-color: #C89537;
+}
+
+@media (max-width: 768px) {
+    .tab button {
+        float: none;
+        width: 100%;
+    }
+
+    .input-box {
+        flex-direction: column;
+    }
+
+    .input-box input[type="text"] {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .input-box button {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.card {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #376ac8;
+    padding: 20px;
+    color: white;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.tab-dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropbtn {
+    background-color: inherit;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #376ac8;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 0 0 4px 4px;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    transition: 0.2s;
+}
+
+.dropdown-content a:hover {
+    background-color: #C89537;
+}
+
+.show-dropdown {
+    display: block;
+}
+
+.tab-dropdown:hover .dropbtn,
+.dropbtn.active {
+    background-color: #C89537;
+}
     </style>
 </head>
 <body>
  <header>
-        <h1>Star Kitchens</h1>
-        <p>Our cook book has all the recipes you want to find!</p>
+  <h1>Star Kitchens</h1>
+  <p>Our cook book has all the recipes you want to find!</p>
     </header>
     <div class="tab">
   <button class="tablinks" onclick="openCity(event, 'Home')">Home</button>
   <div class="tab">
-  
   <div class="tab-dropdown">
     <button class="tablinks dropbtn" onclick="toggleDropdown(event)">
       Recipes ▼
@@ -136,7 +238,6 @@ body {
 </style>
 </head>
 <body>
-
 <div class="border">
 January Recipes
 </div>
@@ -150,7 +251,7 @@ January Recipes
   </div>
  <div class="tab-dropdown">
     <button class="tablinks dropbtn" onclick="toggleDropdown(event)">
-      World-Wide Deserts ▼
+      World-Wide Deserts ▼ 
     </button>
     <div class="dropdown-content">
       <p dir="rtl"></p>
@@ -176,13 +277,10 @@ French Recipes
   <button class="tablinks" onclick="openCity(event, 'az')">A-Z Recipes</button>
   <button class="tablinks" onclick="openCity(event, 'AI')">AI</button>
   <button class="tablinks" onclick="openCity(event, 'About')">About</button>
+  <button class="tablinks" onclick="openCity(event, 'References')">References</button>
   <button class="tablinks" onclick="openCity(event, 'Contact')">Contact</button>
 </div>
-
 <style>
-/* Existing tab styles remain the same */
-
-/* Dropdown styles that match your theme */
 .tab-dropdown {
   float: left;
   overflow: hidden;
@@ -280,7 +378,7 @@ window.onclick = function(event) {
       <h4 class="card-title">Japenese Ramen</h4>
      <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#demo">Recipe</button>
   <div id="demo" class="collapse show">
-    <h3> Ingredients </h3>
+    <h2> Ingredients </h2>
     <p><li> Ramen noodles packet </p>
     <p><li> Garlic and ginger </p>
     <p><li> Broth (chicken or veg) </p>
@@ -288,7 +386,7 @@ window.onclick = function(event) {
     <p><li> Carrots </p>
     <p><li> Eggs </p>
     <p>                                                            </p>
-    <h3> Recipe </h3>
+    <h2> Recipe </h2>
     <p><li> Stir fry garlic and ginger in a bowl </p>
     <p>                                                       </p>
     <p><li> Add some chicken/veg broth and dried shiitake mushrooms </p>
@@ -316,6 +414,44 @@ window.onclick = function(event) {
   <button class="tablinks" onclick="openCity(event, 'Broccolicheddar')">Broccoli Cheddar Soup</button>
 </div>
 </div>
+<div id="mousse" class="tabcontent">
+  <style>
+    p.a {
+    text-align-last: left;
+  }
+  h3{
+    text-align: left
+  }
+  h6{
+    text-align: left
+  }
+  </style>
+<h2>Chocolate Mousse Cake</h2>
+<h3>Ingredients</h3>
+<p class="a">8 oz of chopped up dark chocolate</p>
+<p class="a">1 cup heavy cream</p>
+<p class="a">1 teaspoon vanilla extract</p>
+<p class="a">2 tablespoons sugar</p>
+<p class="a">Pinch of salt</p>
+<p class="a">1/2 cup of whipped cream</p>
+<h3>Recipe</h3>
+<h6>Melt the Chocolate:</h6>
+<p class="a">First, In a bowl,melt your chopped chocolate by using a microwave.</p>
+<p class="a">Microwave Method: Heat in 30-second intervals while stirring between each one until completely melted and then let it slightly cool.</p>
+<h6>Whip the Cream:</h6>
+<p class="a">In a separate bowl, whip your heavy cream with sugar and vanilla extract until soft peaks slowly form. You can use an electric mixer or whisk by hand and set it aside for now.</p>
+<h6>Combine the Ingredients:</h6>
+<p class="a">Fold the whipped cream into the melted chocolate until fully combined and then pour into a serving dish or individual cups.</p>
+<h6>Chill:</h6>
+<p class="a">Chill the mousse in the fridge for at least 2 hours or until set and then top with whipped cream and enjoy!</p>
+</div>
+<nav class="tab-bar">
+<div id="References" class="tabcontent">
+<h2>References</h2>
+<p>Download to access in PDF</p>
+<a href="https://1drv.ms/b/c/a90143922c39d2b6/EWr50w76GDZOrcoivrl5C2wBAvWVyXf9DRzeE-1CDW7P9w?e=1JsbqJ" target="_blank">Download PDF Work Log</a>
+</div>
+</nav>
 <nav class="tab-bar">
 <div id="az" class="tabcontent">
   <style>
@@ -327,21 +463,101 @@ h2 {
 }
 </style>
 <h2>A-Z Recipes</h2>
-<p class="a"><a href="starkitchensspaghetti.html">Spaghetti Recipe</a></p>
+<style>
+.input-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.input-box input[type="text"] {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.input-box button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  border: none;
+  background-color: #376ac8;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.input-box button:hover {
+  background-color: #C89537;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .input-box {
+    flex-direction: column;
+  }
+
+  .input-box input[type="text"] {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .input-box button {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+</style>
+<div class="input-box">
+  <i class="uil uil-search"></i>
+  <input type="text" id="searchInput" placeholder="Search here..." onkeyup="searchFunction()" />
+  <button class="button" onclick="searchFunction()">Search</button>
+</div>
+<ul id="recipeList">
+  <li><a href="starkitchentoast.html">Avocado Toast Recipe</a></li>
+  <li><a href="starkitchenbrisket.html">Brisket Recipe</a></li>
+  <li><a href="starkitchencrepe.html">Chocolate and Strawberry Crepe</a></li>
+  <li><a href="starkitchensspaghetti.html">Spaghetti Recipe</a></li>
+</ul>
+<script>
+  function searchFunction() {
+    // Declare variables
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById('searchInput');
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("recipeList");
+    li = ul.getElementsByTagName('li');
+  
+    // Loop through all list items, and hide those who don't match the search query
+    for (i = 0; i < li.length; i++) {
+      a = li[i].getElementsByTagName("a")[0];
+      txtValue = a.textContent || a.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        li[i].style.display = "";
+      } else {
+        li[i].style.display = "none";
+      }
+    }
+  }
+  </script>
 </div>
 <div id="About" class="tabcontent">
 <h2>About Us</h2>
         <p>We are very passionate food creators so we decided to create this site to show our favorite foods.</p>
         <p>                                                    </p>
         <p>We used Bootstrap 5 to make this website</p>
-        <h3>Who created this website</h3>
-        <p> Rahul Chandran (Magager) </p>
+        <h2>Who created this website</h2>
+        <p> Rahul Chandran (Manager) </p>
         <p> Rylan D'Souza (Manager) </p>
         <p> Vihaan Baddam (Logo Creator) </p>
         <p> Vikranth Anguela (Logo Creator) </p>
         <p> Marawan Salama (Logo Creator) </p>
         <p> Vignesh Srikumar (Website Designer) </p>
-        <h3>Citation</h3>
+        <h2>Citation</h2>
         <p>Allrecipes. www.allrecipes.com/.</p>
 </div>
 </div>
@@ -370,12 +586,12 @@ h2 {
   </div>
 </div>
 <div id="Casseroles" class="tabcontent">
-<h3>Casseroles Ingredients</h3>
+<h2>Casseroles Ingredients</h2>
 <p><li>Frozen vegetables</p></li>
 <p><li>Cheese of your choice</p></li>
 <p><li>Breadcrumbs, croutons</p></li>
 <p><li>Garlic butter</p></li>
-<h3>Casseroles Recipe</h3>
+<h2>Casseroles Recipe</h2>
 <p><li>Cook frozen vegetables in a pan and transfer to a baking plate.</p></li>
 <br>                                                                          </br> 
 <p><li>Then top with any cheese of your choice.</p>
@@ -389,7 +605,7 @@ h2 {
 <a href="#" onclick="showTab('Monthrecipes')">Other Recipes</a>
 </div>
 <div id="Briochebread" class="tabcontent">
-<h3>Brioche Bread Ingredients</h3>
+<h2>Brioche Bread Ingredients</h2>
 <p><li>1 tablespoon active dry yeast</p></li>
 <p><li>⅓ cup warm water (110 degrees F)</p></li>
 <p><li>3 ½ cups all-purpose flour</p></li>
@@ -401,7 +617,7 @@ h2 {
 <p><li>1 teaspoon cold water</p></li>
 <p><li>1 cup butter, softened</p></li>
 <p><li>½ teaspoon vegetable oil, or as needed</p></li>
-<h3>Brioche Bread Recipe</h3>
+<h2>Brioche Bread Recipe</h2>
 <p><li>Gather all ingredients.</p></li>
 <p>                                                                                          </p>
 <p><li>Dissolve yeast in warm water in a small bowl. Let stand until creamy, about 10 minutes.</p></li>
@@ -435,7 +651,7 @@ h2 {
 <div id="Tomatoesoup" class="tabcontent">
 </div>
 <div id="Broccolicheddar" class="tabcontent">
-<h3>Broccoli Cheddar Soup Ingredients</h3>
+<h2>Broccoli Cheddar Soup Ingredients</h2>
 <p><li>3 (14.5 ounce) cans chicken broth</p></li>
 <p><li>3 (10 ounce) packages frozen chopped broccoli</p></li>
 <p><li>6 tablespoons margarine</p></li>
@@ -444,7 +660,7 @@ h2 {
 <p><li>2 cups milk</p></li>
 <p><li>1 ½ pounds processed cheese food (eg. Velveeta), cubed</p></li>
 <p><li>1 pinch ground white pepper</p></li>
-<h3>Broccoli Cheddar Soup Recipes</h3>
+<h2>Broccoli Cheddar Soup Recipes</h2>
 <p>                                                                                                                                 </p>
 <p><li>Bring broth to a simmer in a large pot over medium heat. Cook broccoli in simmering broth for 15 minutes.</p></li>
 <p>                                                                                                                                 </p>
@@ -563,10 +779,6 @@ sendChatBtn.addEventListener("click", handleChat);
 closeBtn.addEventListener("click", () => document.body.classList.remove("show-chatbot"));
 chatbotToggler.addEventListener("click", () => document.body.classList.toggle("show-chatbot"));
 </script>
-<footer>
-©Copyright All Rights Reserved "Star Kitchens"
-</footer>
-
 <script>
 function openCity(evt, cityName) {
   var i, tabcontent, tablinks;
@@ -582,7 +794,6 @@ function openCity(evt, cityName) {
   evt.currentTarget.className += " active";
 }
 </script>
-<script>
 <script>
 function openCity(evt, cityName) {
   var i, tabcontent, tablinks;
@@ -602,6 +813,39 @@ function openCity(evt, cityName) {
   }
 }
 
+        function toggleDropdown(event) {
+            event.stopPropagation(); // Prevent the click from triggering parent elements
+            
+            // Close all dropdowns first
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            for (var i = 0; i < dropdowns.length; i++) {
+                dropdowns[i].classList.remove("show-dropdown");
+            }
+            
+            // Toggle the clicked dropdown
+            var dropdownContent = event.currentTarget.nextElementSibling;
+            dropdownContent.classList.toggle("show-dropdown");
+            
+            // Add active class to the button
+            var buttons = document.getElementsByClassName("dropbtn");
+            for (var i = 0; i < buttons.length; i++) {
+                buttons[i].classList.remove("active");
+            }
+            event.currentTarget.classList.add("active");
+        }
+
+        // Close dropdown when clicking outside
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show-dropdown')) {
+                        openDropdown.classList.remove('show-dropdown');
+                    }
+                }
+            }
+        }
 // Automatically click on the "Home" tab when the page loads
 document.addEventListener("DOMContentLoaded", function() {
   document.getElementById("defaultOpen").click();
@@ -609,4 +853,4 @@ document.addEventListener("DOMContentLoaded", function() {
 </script>
 </script>
 </body>
-</html> 
+</html>
